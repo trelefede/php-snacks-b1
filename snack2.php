@@ -13,12 +13,13 @@
     echo '<p> Age:'.$age.'</p>';
 
     $nameLength = strlen($name);
-    $ageVerify = is_int($age);
-    $mailVerify = str_contains($mail, '.', '@');
+    $ageVerify = is_numeric($age);
+    $mailVerify = strpos($mail, '.');
+    $mailVerify2 = strpos($mail, '@');
 
     $result = "";
 
-    if ($nameLength > 3 && $ageVerify && $mailVerify) {
+    if ($nameLength > 3 && $ageVerify && $mailVerify > -1 && $mailVerify2 > -1) {
         $result = 'Accesso riuscito';
         echo $result;
     } 
