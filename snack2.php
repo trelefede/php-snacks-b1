@@ -18,7 +18,7 @@
 
     $result = "";
 
-    if ($nameLength > 3 && ageVerify && mailVerify) {
+    if ($nameLength > 3 && $ageVerify && $mailVerify) {
         $result = 'Accesso riuscito';
         echo $result;
     } 
