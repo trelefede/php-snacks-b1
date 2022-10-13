@@ -28,7 +28,9 @@
     for ($i = 0; $i < count($match); $i++){
         $matchInfo = $match[$i];
         ?>
-            <p><?= $matchInfo['squadraCasa']?> - <?= $matchInfo['squadraOspite']?> | <?= $matchInfo['puntiCasa']?> - <?= $matchInfo['puntiOspiti']?></p>
+            <p>
+                <?= $matchInfo['squadraCasa']?> - <?= $matchInfo['squadraOspite']?> | <?= $matchInfo['puntiCasa']?> - <?= $matchInfo['puntiOspiti']?>
+            </p>
         <?php
     }    
 ?>
